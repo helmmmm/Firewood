@@ -58,7 +58,7 @@ MonoBehaviour:
   _zOffset: 0
   _mapLayer: 4
   _features: 21000000
-  _prefab: {fileID: 5901825931088736854, guid: 61acce84ac0e743208d11d07e2c61cf1, type: 3}
+  _prefab: {fileID: 3341086851686153211, guid: 61acce84ac0e743208d11d07e2c61cf1, type: 3}
   _resourceType: 0
 --- !u!1 &5915852986909957580
 GameObject:
@@ -120,6 +120,66 @@ MonoBehaviour:
   _features: 22000000
   _prefab: {fileID: 8685289899672628657, guid: ab1f7f4a0bcbf4b4baed7f1812f668ce, type: 3}
   _resourceType: 4
+--- !u!1 &9082386079401496074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3678166831787331533}
+  - component: {fileID: 5697924199669521832}
+  m_Layer: 0
+  m_Name: FoodSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3678166831787331533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9082386079401496074}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1940928710900719767}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5697924199669521832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9082386079401496074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ac0a6e16384f00adfe9093965e631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _undefinedFeatures: 00000000
+  _boundaryFeatures: 
+  _structureFeatures: 
+  _landUseFeatures: 14000000
+  _placesFeatures: 
+  _linearFeatures: 
+  _transitFeatures: 
+  _waterFeatures: 
+  _builderName: Food
+  _minLOD: 0
+  _maxLOD: 17
+  _zOffset: 0
+  _mapLayer: 4
+  _features: 14000000
+  _prefab: {fileID: 1023968322348627454, guid: f3333d17ff5d84a36846de7855a9a5f7, type: 3}
+  _resourceType: 5
 --- !u!1001 &6335443825070415656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 2345192730605552772, guid: cd277179f7659423ea870564d2ff9e75,
         type: 3}
       propertyPath: _builders.Array.size
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2345192730605552772, guid: cd277179f7659423ea870564d2ff9e75,
         type: 3}
@@ -178,6 +238,11 @@ PrefabInstance:
       propertyPath: _builders.Array.data[13]
       value: 
       objectReference: {fileID: 7530142769171746258}
+    - target: {fileID: 2345192730605552772, guid: cd277179f7659423ea870564d2ff9e75,
+        type: 3}
+      propertyPath: _builders.Array.data[14]
+      value: 
+      objectReference: {fileID: 5697924199669521832}
     - target: {fileID: 4390146466171986028, guid: cd277179f7659423ea870564d2ff9e75,
         type: 3}
       propertyPath: _materials.Array.data[0]
@@ -244,6 +309,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 918542527658071233}
+    - targetCorrespondingSourceObject: {fileID: 5549442952622489535, guid: cd277179f7659423ea870564d2ff9e75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3678166831787331533}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd277179f7659423ea870564d2ff9e75, type: 3}
 --- !u!4 &1940928710900719767 stripped

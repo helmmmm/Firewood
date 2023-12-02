@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7806833416379925748}
   - component: {fileID: 3247391997131278980}
+  - component: {fileID: 1608772943231443514}
+  - component: {fileID: 7540139376133686350}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: MapResourceFeature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +48,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 45
+--- !u!114 &1608772943231443514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685289899672628657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effe79652e5734d8899d20b6c17bfa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resourceType: 1
+  _gainable: 0
+--- !u!65 &7540139376133686350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685289899672628657}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9272842, y: 12.088774, z: 12.050137}
+  m_Center: {x: 0, y: 10.29672, z: -0.0000009536743}
 --- !u!1001 &4860590281987250932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -128,6 +165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b302594e0166d4ec59528d4977b51806,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
