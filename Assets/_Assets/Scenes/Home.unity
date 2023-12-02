@@ -1482,9 +1482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Map
-
-'
+  m_text: Explore
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e2752ec08f19b4a7791921219ca169c1, type: 2}
   m_sharedMaterial: {fileID: -4336114812174704911, guid: e2752ec08f19b4a7791921219ca169c1,
@@ -2592,7 +2590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.91193485, g: 0.92387193, b: 0.9339623, a: 1}
+  m_Color: {r: 0.80731577, g: 0.85500175, b: 0.8867924, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
