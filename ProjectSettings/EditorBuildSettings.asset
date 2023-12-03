@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/_Assets/Scenes/Camp.unity
     guid: d08ef5c6348de4fe7aaa84034fea45a5
   - enabled: 1
-    path: Assets/_Assets/Scenes/Tests/test_maps.unity
+    path: Assets/_Assets/Scenes/test_maps.unity
     guid: 43ff37fba3a454e128206a090f2eb894
+  - enabled: 1
+    path: Assets/_Assets/Scenes/Semantic.unity
+    guid: 18e9b7bd7b28d41878dba86aa6049984
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 8052f75db34df4d65925c30d45b0e1ad,
       type: 2}

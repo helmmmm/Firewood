@@ -21,7 +21,7 @@ public class PlayerAnimation : MonoBehaviour
         _currentPosition = transform.position;
         float speed = Vector3.Distance(_lastPosition, transform.position) / Time.deltaTime;
 
-        if (speed > 2.0f)
+        if (speed > 0.5f)
         {
             _animator.SetBool("Moving", true);
         }
@@ -29,7 +29,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             _animator.SetBool("Moving", false);
         }
-        Debug.Log(speed);
+        // Debug.Log(speed);
 
 
         _lastPosition = _currentPosition;
