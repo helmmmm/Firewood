@@ -29,6 +29,11 @@ public class MapUI : MonoBehaviour
         _foodResourcesText.text = "<sprite name=\"Food\"> " + ResourceManager.Instance.GetResourceAmount(ResourceManager.ResourceTypes.Food).ToString();  
     }
 
+    public void OnFeverTimeButtonClicked()
+    {
+        SceneManager.LoadScene("Semantics");
+    }
+
     public void OnExitButtonClicked()
     {
         SceneManager.LoadScene("Home");

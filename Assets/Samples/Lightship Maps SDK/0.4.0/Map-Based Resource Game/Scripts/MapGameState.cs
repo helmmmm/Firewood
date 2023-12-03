@@ -68,7 +68,7 @@ namespace Niantic.Lightship.Maps.Samples.GameSample
             _resources[ResourceType.Food] = 0;
 
             _resourceProduction[ResourceType.Wood] = true;
-            _resourceProduction[ResourceType.Coins] = true;
+            
             _resourceProduction[ResourceType.Food] = true;
         }
 

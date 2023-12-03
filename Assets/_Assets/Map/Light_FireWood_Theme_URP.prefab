@@ -107,7 +107,7 @@ MonoBehaviour:
   _undefinedFeatures: 00000000
   _boundaryFeatures: 
   _structureFeatures: 
-  _landUseFeatures: 22000000
+  _landUseFeatures: 
   _placesFeatures: 
   _linearFeatures: 
   _transitFeatures: 
@@ -117,7 +117,7 @@ MonoBehaviour:
   _maxLOD: 17
   _zOffset: 0
   _mapLayer: 4
-  _features: 22000000
+  _features: 
   _prefab: {fileID: 8685289899672628657, guid: ab1f7f4a0bcbf4b4baed7f1812f668ce, type: 3}
   _resourceType: 4
 --- !u!1 &9082386079401496074
@@ -256,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 5737022542264513315, guid: cd277179f7659423ea870564d2ff9e75,
         type: 3}
       propertyPath: _maxHeight
-      value: 10000
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5737022542264513315, guid: cd277179f7659423ea870564d2ff9e75,
         type: 3}

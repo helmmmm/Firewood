@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ResourceManager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class ResourceManager : MonoBehaviour
     // Singleton
     public static ResourceManager Instance { get; private set; }
 
+    public float _remainingFireTime;
+
     private void Awake() 
     {
         if (Instance != null)
@@ -33,6 +36,20 @@ public class ResourceManager : MonoBehaviour
         _resources[ResourceTypes.Wood] = 100;
         _resources[ResourceTypes.Coin] = 2200;
         _resources[ResourceTypes.Food] = 100;
+        _remainingFireTime = 1000f;
+    }
+
+    void Update()
+    {
+        if (_remainingFireTime > 0.0f)
+        {
+            _remainingFireTime -= Time.deltaTime / 60f;
+        }
+        
+        else
+        {
+            Debug.Log("Fire is out!");
+        }    
     }
 
     public int GetResourceAmount(ResourceTypes type)
