@@ -13,6 +13,8 @@ public class CampUI : MonoBehaviour
     [SerializeField] private GameObject _messagePanel;
     [SerializeField] private TMP_InputField _chatInputField;
     [SerializeField] private TMP_Text _messageText;
+    [SerializeField] private GameObject _deploymentStatus;
+    [SerializeField] private TMP_Text _deploymentStatusText;
 
     private void Start() 
     {
@@ -21,11 +23,20 @@ public class CampUI : MonoBehaviour
         ResourceManager.Instance.OnResourceChanged += UpdateResourceText;
 
         _chatPanel.SetActive(false);
+        
+        if (ResourceManager.Instance._deployed)
+            AddDeployment(ResourceManager.Instance._vpsTargetName);
     }
 
     private void UpdateResourceText(ResourceManager.ResourceTypes type, int amount)
     {
         UpdateResourcesUI();
+    }
+
+    private void AddDeployment(string vpsName)
+    {
+        _deploymentStatusText.text = $"Deployed at {vpsName}";
+        _deploymentStatus.SetActive(true);
     }
 
     private void UpdateResourcesUI()

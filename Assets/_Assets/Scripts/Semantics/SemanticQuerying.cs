@@ -48,7 +48,7 @@ public class SemanticQuerying : MonoBehaviour
         else 
         {
             _currentSemantic = "";
-            _promptText.text = "Nothing there. Point somewhere else!";
+            _promptText.text = "Nothing there! Point somewhere else(Water, Ground, Tree...)";
         }
 
 
