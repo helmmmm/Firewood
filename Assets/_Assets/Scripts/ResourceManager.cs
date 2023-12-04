@@ -20,6 +20,9 @@ public class ResourceManager : MonoBehaviour
     public static ResourceManager Instance { get; private set; }
 
     public float _remainingFireTime;
+    public string _campName = "The Jeong Fam";
+    public string _vpsTargetName;
+    public bool _deployed = false;
 
     private void Awake() 
     {
@@ -35,7 +38,7 @@ public class ResourceManager : MonoBehaviour
 
         _resources[ResourceTypes.Wood] = 100;
         _resources[ResourceTypes.Coin] = 2200;
-        _resources[ResourceTypes.Food] = 100;
+        _resources[ResourceTypes.Food] = 200;
         _remainingFireTime = 1000f;
     }
 
